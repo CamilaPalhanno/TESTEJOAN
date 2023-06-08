@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rede Social </title>
+
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="kwitter.js"></script>
+</head>
+<body>
+
+<center>
+	<h1 class="header">	
+		Rede Social Escolar	<sup>
+
+			<!-- "<sup>"" Essa tag HTML é usada para criar um elemento de sobrescrito. 
+				Neste caso, é usado para envolver a próxima parte do código, que é uma imagem.-->
+
+	<img src="m2.png">
+
+	<!--O atributo "src" indica que o caminho de um arquivo que será incluído no código-->
+	</sup>
+</h1>
+<div class="col-lg-4 col-md-6 col-sm-6 col-xs-11 login_div">
+
+		<!--
+			col-lg-4: Essa classe define o layout da coluna para telas grandes (large). 
+			Ela indica que a div ocupará 4 colunas de um sistema de grid responsivo baseado em 12 colunas. Essa classe é comumente usada no framework Bootstrap para criar layouts responsivos.
+
+col-md-6: Essa classe define o layout da coluna para telas médias (medium). 
+Ela indica que a div ocupará 6 colunas de um sistema de grid responsivo baseado em 12 colunas. Essa classe é usada quando a largura da tela está em um intervalo médio.
+
+col-sm-6: Essa classe define o layout da coluna para telas pequenas (small). 
+Ela indica que a div ocupará 6 colunas de um sistema de grid responsivo baseado em 12 colunas. Essa classe é usada quando a largura da tela está em um intervalo pequeno.
+
+col-xs-11: Essa classe define o layout da coluna para telas extra pequenas (extra small). 
+Ela indica que a div ocupará 11 colunas de um sistema de grid responsivo baseado em 12 colunas. Essa classe é usada quando a largura da tela é muito pequena, como em dispositivos móveis.
+
+login_div: Essa classe é personalizada e provavelmente é usada para aplicar estilos específicos a essa div. 
+O nome "login_div" sugere que essa div possa conter elementos relacionados a um formulário ou área de login.
+			
+		div possui classes que definem o layout responsivo em diferentes tamanhos de tela,
+	seguindo um sistema de grid, e também uma classe personalizada "login_div" para estilização adicional.
+RESPONSIVO: Se ajusta em diferentes tamanhos de tela 
+
+-->
+
+	<img src="logo.png" class="logo">
+		<h3 >Veja o que está acontecendo no mundo</h3>
+
+		<h4 >Junte-se a nós hoje</h4>
+		
+		<div class="form-group">
+
+<!-- Agrupar elementos de formulário relacionados, fornecendo um layout e estilo consistente para esses elementos.
+A classe "form-group" geralmente é aplicada a uma div que contém elementos de formulário, 
+como campos de entrada de texto, botões, seletores, etc. 
+Ela ajuda a organizar visualmente os elementos do formulário e pode ser estilizada de acordo com as regras definidas no arquivo CSS do projeto.
+-->
+		  <label >Nome de Usuário:</label>
+		 <input type="text" id="userName" class="form-control" placeholder="Nome de Usuário">
+		</div>
+
+		<button id="loginButton" class="btn btn-primary" onclick="addUser()">Login</button>
+		<br><br>
+	</div>
+</center>
+
+</body>
+</html>
